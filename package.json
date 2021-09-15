@@ -1,0 +1,23 @@
+{
+  "name": "slimme-afvalbak",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "description": "Voor mensen met een brein",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BertilVossebelt/slimme-afvalbak.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BertilVossebelt/slimme-afvalbak/issues"
+  },
+  "homepage": "https://github.com/BertilVossebelt/slimme-afvalbak#readme"
+}
