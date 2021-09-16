@@ -1,6 +1,9 @@
 // Make a request to getter.py to get the data from the database
 
-// Axios is loaded using an external link because not everyone has axios/npm installed yet.
+/*
+* Axios is loaded using an external link because not everyone has axios/npm installed yet.
+* Make sure to change the url to your hostname or ip.
+*/
 const request = axios.get('http://192.168.1.76/slimme-afvalbak/api/getter.py');
 
 // Log errors if needed
