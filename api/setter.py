@@ -1,20 +1,19 @@
+#!/usr/bin/python3
 import mysql.connector as mariadb
 
-data = []
-
+# Connect to database
 mariadb_connection = mariadb.connect(
     user='lit',
     password='',
-    database='producten')
-#cursor = mariadb_connection.cursor()
+    database='producten'
+)
 
 
 class Setter:
+    # This function is used to insert data into the database.
+    # The data is delivered by Scanner.py
     def set(self, barcode, product):
-        print(barcode, product)
+        # Setup a query with values and execute it.
         sql_select_query = "INSERT INTO producten (barcode, product) VALUES (" + str(barcode) + ", \"" + product + "\")"
-        # print(sql_select_query)
-        cursor = mariadb_connection.cursor()
-        cursor.execute(sql_select_query)
+        mariadb_connection.cursor().execute(sql_select_query)
         mariadb_connection.commit()
-        print("end")

@@ -1,13 +1,20 @@
-.page-title {
-    font-size: 20pt;
-    border-bottom: black;
-    text-align: center;
-    text-decoration: overline;
-    text-decoration: underline;
-}
-
+/* --- General styles --- */
 body {
     text-align: center;
     border-style: double;
     border-width: 5px;
 }
+
+/* --- Index.html styles  --- */
+.page-title {
+    font-size: 20pt;
+    border-bottom: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.page-under-title {
+    font-weight: bold;
+}
+
+/* --- shoppingList.html styles --- */

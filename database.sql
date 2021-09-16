@@ -1,3 +1,9 @@
+# Script to create a user with SELECT and INSERT rights
+# It also creates a database with one table
+
+# Sadly someone wasn't very consistent with languages, but it's fine,
+# it works I guess.
+
 DROP USER IF EXISTS 'lit'@'localhost';
 DROP DATABASE IF EXISTS producten;
 CREATE DATABASE producten;
@@ -7,7 +13,6 @@ CREATE TABLE IF NOT EXISTS producten(
     barcode VARCHAR(15),
     product CHAR(255)
 );
-INSERT INTO producten (barcode, product) VALUES ('3471829019548', 'Dalphine Water');
 
 CREATE USER 'lit'@'localhost' IDENTIFIED BY '';
 GRANT INSERT ON producten TO 'lit'@'localhost';
