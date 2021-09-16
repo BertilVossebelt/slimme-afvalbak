@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS producten(
     barcode VARCHAR(15),
     product CHAR(255)
 );
-INSERT INTO producten (barcode, product) VALUES ('3471829019548', 'Dalphin Water');
+INSERT INTO producten (barcode, product) VALUES ('3471829019548', 'Dalphine Water');
 
 CREATE USER 'lit'@'localhost' IDENTIFIED BY '';
 GRANT INSERT ON producten TO 'lit'@'localhost';
