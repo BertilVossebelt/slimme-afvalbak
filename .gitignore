@@ -133,3 +133,6 @@ dmypy.json
 
 #npm
 node_modules
+
+# MS Visual Studio Code
+.vscode

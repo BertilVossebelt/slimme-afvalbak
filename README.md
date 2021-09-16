@@ -1,3 +1,3 @@
 # slimme-afvalbak
 
-Voor mensen met een brein...
+Voor mensen met een brein!
