@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+print('Content-type: text/html\r\n\r')
+
 import mysql.connector as mariadb
 
 data = []
@@ -12,10 +15,10 @@ cursor = mariadb_connection.cursor()
 cursor.execute(sql_select_Query)
 
 get = cursor.fetchall()
-print("Aantal rijen in het tabel: ", cursor.rowcount)
 
-print("\nElke rij: ")
+products = []
+
 for row in get:
-    print("Id = ", row[0], )
-    print("Barcode = ", row[1])
-    print("Product = ", row[2])
+    products.append({'id': row[0], 'barcode': row[1], 'product': row[2]})
+
+print(products)
