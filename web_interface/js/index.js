@@ -4,7 +4,7 @@
 * Axios is loaded using an external link because not everyone has axios/npm installed yet.
 * Make sure to change the url to your hostname or ip.
 */
-const request = axios.get('http://192.168.1.76/slimme-afvalbak/api/getter.py');
+const request = axios.get('http://145.44.38.112/slimme-afvalbak/api/getter.py');
 
 // Log errors if needed
 request.catch((error) => {
@@ -22,7 +22,7 @@ request.then((response) => {
 
     // Loop over all the products and add them to a string
     data.forEach((product) => {
-            list_items = list_items + "<li>" + product.product + " - Barcode: " + product.barcode + "</li>" + "\n";
+        list_items = list_items + "<li>" + product.product + " - Barcode: " + product.barcode + "</li>" + "\n";
     });
 
     // Write string inside of ul tags.

@@ -5,7 +5,8 @@ from api.setter import Setter
 barcode = input("barcode: ")
 
 html_page = urllib.request.urlopen("https://coop.nl/zoeken/" + barcode)
-soup = BeautifulSoup(html_page)
+soup = BeautifulSoup(html_page, features="lxml")
+
 for link in soup.findAll('a'):
     if type(link.get('href')) == str and link.get('href').find(barcode) >= 0:
         url = link.get('href')
